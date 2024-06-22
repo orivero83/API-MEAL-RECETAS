@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Recetas de Comida ( MEAL )</title>
+
+    <!--Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!--Tailwindcss-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="text-center m-8 bg-pink-700 text-white text 2xl">
+    
+    <button onclick="getMeal()" 
+    class="p-2 m-4 border rounded-md bg-green-700 hover:bg-white hover:text-green-900">
+        Next Meal / Siguiente Receta
+    </button>
+    <section>
+        <h1 id="strMeal"></h1>
+        <h3 id="strCategory"></h3>
+        <h3 id="strArea"></h3>
+
+        <img id="strMealThumb" src="" alt=""
+        class="h-80 w-80 rounded-md m-auto mt-8 mb-8">
+
+        <p id="strInstructions" class="text-justify"></p>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
